@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.welcome .row{
+    display: flex;
+}
+.welcome .col{
+    width: 50%;
+    text-align: center;
+}
+.welcome img{
+    width: 100%;
+    height: auto;
+}
+.welcome .phara-1{
+    font-size: 26px;
+    margin-top: 50px;
+}
+.welcome h2 {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  .welcome .long-phara{
+    max-width: 400px;
+    margin: auto;
+  }
+  .welcome .bg-image {
+    background-image: url(./img/sto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    width: 600px;
+    margin: auto;
+    transform: translateY(-430px);
+}
+.welcome .content{
+    z-index: 1;
+    position: relative;
+}
+@media only screen and (max-width: 600px) {
+    .welcome .row{
+    flex-wrap: wrap;
+    }
+    .welcome .col{
+        width: 100%;
+    }
+    .welcome img {
+        width: unset;
+        height: 1100px;
+        object-fit: contain;
+        z-index: 1;
+        position: relative;
+    }
+    .welcome .content {
+        transform: translateX(30%);
+}
+}
